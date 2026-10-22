@@ -1,0 +1,17 @@
+import type { Metadata } from 'next';
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: 'MedCloak — Cyber-Immune Medical Exchange | RMIT Hackathon 2026',
+  description: 'Cross-hospital medical record exchange powered by TideCloak Cybersecurity Fabric. Zero god-mode. Immunity-Sealed E2EE.',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className="dark">
+      <body className="min-h-screen bg-gray-950 text-gray-100 antialiased">
+        {children}
+      </body>
+    </html>
+  );
+}
